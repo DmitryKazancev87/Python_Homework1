@@ -4,3 +4,11 @@
 
 # 385916 -> yes
 # 123456 -> no
+number=str(input('Введите шестизначный номер билета для проверки:'))
+FirstSum=int(number[0])+int(number[1])+int(number[2])
+LastSum=int(number[3])+int(number[4])+int(number[5])
+if FirstSum==LastSum:
+    print(f'Билет с номером {number} является счастливым (Yes)')
+else:
+    print(f'В билете с номером {number} совпадений не найдено (No)')    
+    
